@@ -1,0 +1,204 @@
+body {
+  background-color:  #7d97bf;
+}
+
+.fondo{
+  width: 100vw;
+  height:601px;
+  background-repeat: repeat-x;
+  background-image: url("6q7cXaP.png");
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.car {
+  width:300px;
+  height:160px;
+  background-image: url("car.gif");
+  position: absolute;
+  bottom:140px;
+}
+
+.car {
+  animation: aparece-derecha 10s ease infinite forwards;
+}
+
+.avion {
+  width:133px;
+  height:100px;
+  background-image: url("avion.gif");
+  position: absolute;
+  top: 140px;
+}
+
+.avion {
+  animation: aparece-derecha 120s ease infinite forwards;
+}
+
+.cochenaranja {
+  width:300px;
+  height:97px;
+  background-image: url("cochenaranja.png");
+  position: absolute;
+  bottom:50px;
+}
+
+.cochenaranja {
+  animation: aparece-izquierda 20s ease infinite forwards;
+}
+
+.sol {
+  width:350px;
+  height:350px;
+  background-image: url("sol.gif");
+  position: absolute;
+  bottom: 600px;
+  left: -100px;
+}
+
+.sol {
+  animation: sol-movimiento 60s ease infinite forwards;
+}
+
+.pajaros {
+  width:300px;
+  height:464px;
+  background-image: url("pajaros.gif");
+  position: absolute;
+  bottom:400px;
+  left: 200px;
+}
+
+.pajaros {
+  animation: aparece-izquierda 50s ease infinite forwards;
+}
+
+.nube {
+  width:900px;
+  height:392px;
+  background-image: url("nube.png");
+  position: absolute;
+  bottom:1300px;
+}
+
+.nube {
+  animation: aparece-derecha 60s ease infinite forwards;
+}
+
+.gente-izquierda {
+  width:302px;
+  height:170px;
+  background-image: url("gente.gif");
+  position: absolute;
+  bottom:250px;
+}
+
+.gente-izquierda {
+  animation: aparece-izquierda 40s ease infinite forwards;
+}
+
+.gente-derecha {
+  width:400px;
+  height:300px;
+  background-image: url("gente-derecha.gif");
+  position: absolute;
+  bottom:280px;
+}
+
+.gente-derecha {
+  animation: aparece-derecha 40s ease infinite forwards;
+}
+
+.pajaroizquierda {
+  width:500px;
+  height:414px;
+  background-image: url("pajaroizquierda.gif");
+  position: absolute;
+  top: 300px;
+}
+
+.pajaroizquierda {
+  animation: aparece-derecha-pokemon 10s ease 1 forwards;
+}
+
+.chorizo {
+  width:700px;
+  height:500px;
+  background-image: url("chorizo.gif");
+  position: absolute;
+  top: 700px;
+}
+
+.chorizo {
+  animation: aparece-izquierda-pokemon 10s ease 1 forwards;
+}
+
+.energy {
+  width:400px;
+  height:400px;
+  background-image: url("energy.gif");
+  position: absolute;
+  top: 700px;
+}
+
+@keyframes aparece-izquierda-pokemon {
+  from{
+    transform: translateX(-10vw);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+
+@keyframes aparece-derecha-pokemon {
+  from{
+    transform: translateX(110vw);
+  }
+  to {
+    transform: translateX(70vw);
+  }
+}
+
+@keyframes aparece-derecha {
+  from{
+    transform: translateX(110vw);
+  }
+  to {
+    transform: translateX(-20vw);
+  }
+}
+
+@keyframes aparece-izquierda {
+  from{
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}
+
+@keyframes sol-movimiento {
+
+  0% {bottom:10vw; left:-10vw;}
+  5% {bottom:14vw; left:5vw;}
+  10% {bottom:17vw; left:10vw;}
+  15% {bottom:20vw; left:15vw;}
+  20% {bottom:22vw; left:20vw;}
+  25% {bottom:25vw; left:25vw;}
+  30% {bottom:28vw; left:30vw;}
+  35% {bottom:32vw; left:33vw;}
+  40% {bottom:35vw; left:36vw;}
+  45% {bottom:38vw; left:38vw;}
+  50% {bottom:43vw; left:43vw;}
+  55% {bottom:38vw; left:47vw;}
+  60% {bottom:35vw; left:54vw;}
+  65% {bottom:32vw; left:60vw;}
+  70% {bottom:28vw; left:65vw;}
+  75% {bottom:25vw; left:75vw;}
+  80% {bottom:22vw; left:80vw;}
+  85% {bottom:20vw; left:85vw;}
+  90% {bottom:17vw; left:90vw;}
+  95% {bottom:14vw; left:95vw;}
+  100% {bottom:10vw; left:110vw;}
+}
